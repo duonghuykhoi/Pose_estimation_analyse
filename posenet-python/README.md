@@ -42,6 +42,11 @@ Image demo runs inference on an input folder of images and outputs those images 
 
 `!python image_demo.py --model 101 --image_dir ./images --output_dir ./output --outputcsv_dir ./outputcsv --outputjson_dir ./outputjson --name Squat_Video`
 
+#### get_images.py 
+
+Get_images runs inference on an input video and outputs those images cutting into frame.
+
+`!python get_images.py --video_dir ./video/A.mp4 --output_dir ./imagesA`
 
 ### Credits
 
