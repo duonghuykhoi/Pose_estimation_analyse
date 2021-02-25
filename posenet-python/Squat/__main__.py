@@ -6,7 +6,7 @@ from get_standard_value import get_standard_value
 from posture import Posture
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--input_json_path', type=str, default='./json/Squat_Video1.json')
+parser.add_argument('--input_json_path', type=str, default='./Squat/Json_sample/Squat_Video1.json')
 args = parser.parse_args()
 
 DATA_PATH = args.input_json_path
