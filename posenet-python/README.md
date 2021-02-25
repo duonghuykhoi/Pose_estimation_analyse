@@ -38,32 +38,14 @@ For all demos, the model can be specified with the '--model` argument by using i
 
 #### image_demo.py 
 
-Image demo runs inference on an input folder of images and outputs those images with the keypoints and skeleton overlayed.
+Image demo runs inference on an input folder of images and outputs those images with the keypoints and skeleton overlayed, coords-point csv and jsonfile.
 
-`python image_demo.py --model 101 --image_dir ./images --output_dir ./output`
+`!python image_demo.py --model 101 --image_dir ./images --output_dir ./output --outputcsv_dir ./outputcsv --outputjson_dir ./outputjson --name Squat_Video`
 
-A folder of suitable test images can be downloaded by first running the `get_test_images.py` script.
-
-#### benchmark.py
-
-A minimal performance benchmark based on image_demo. Images in `--image_dir` are pre-loaded and inference is run `--num_images` times with no drawing and no text output.
-
-#### webcam_demo.py
-
-The webcam demo uses OpenCV to capture images from a connected webcam. The result is overlayed with the keypoints and skeletons and rendered to the screen. The default args for the webcam_demo assume device_id=0 for the camera and that 1280x720 resolution is possible.
 
 ### Credits
 
 The original model, weights, code, etc. was created by Google and can be found at https://github.com/tensorflow/tfjs-models/tree/master/posenet
 
-This port and my work is in no way related to Google.
-
-The Python conversion code that started me on my way was adapted from the CoreML port at https://github.com/infocom-tpo/PoseNet-CoreML
-
-### TODO (someday, maybe)
-* More stringent verification of correctness against the original implementation
-* Performance improvements (especially edge loops in 'decode.py')
-* OpenGL rendering/drawing
-* Comment interfaces, tensor dimensions, etc
-* Implement batch inference for image_demo
+This original image_demo.py was created by Ross Wightman and can be found at https://github.com/rwightman/posenet-python
 
