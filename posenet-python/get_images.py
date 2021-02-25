@@ -4,8 +4,8 @@ import cv2
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('--video_dir', type=str, default='./video/a.mp4')
-parser.add_argument('--output_dir', type=str, default='./images/')
+parser.add_argument('--video_dir', type=str, default='./video/A.mp4')
+parser.add_argument('--output_dir', type=str, default='./imagesA/')
 
 args = parser.parse_args()
 
