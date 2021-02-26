@@ -52,5 +52,5 @@ Get_images runs inference on an input video and outputs those images cutting int
 
 The original model, weights, code, etc. was created by Google and can be found at https://github.com/tensorflow/tfjs-models/tree/master/posenet
 
-This original image_demo.py was created by Ross Wightman and can be found at https://github.com/rwightman/posenet-python
+This original image_demo.py was created by Ross Wightman and can be found at https://github.com/rwightman/posenet-python . I modified it a little bit
 
