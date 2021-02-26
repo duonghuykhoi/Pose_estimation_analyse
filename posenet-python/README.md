@@ -36,17 +36,23 @@ The first time these apps are run (or the library is used) model weights will be
 
 For all demos, the model can be specified with the '--model` argument by using its ordinal id (0-3) or integer depth multiplier (50, 75, 100, 101). The default is the 101 model.
 
+#### get_images.py 
+
+Get_images runs inference on an input video and outputs those images cutting into frame.
+
+`!python get_images.py --video_dir ./video/A.mp4 --output_dir ./imagesA`
+
 #### image_demo.py 
 
 Image demo runs inference on an input folder of images and outputs those images with the keypoints and skeleton overlayed, coords-point csv and jsonfile.
 
 `!python image_demo.py --model 101 --image_dir ./images --output_dir ./output --outputcsv_dir ./outputcsv --outputjson_dir ./outputjson --name Squat_Video`
 
-#### get_images.py 
+#### Squat folder: __main__.py 
 
-Get_images runs inference on an input video and outputs those images cutting into frame.
+__main__ runs inference on an input jsonfile and outputs number of Squat
 
-`!python get_images.py --video_dir ./video/A.mp4 --output_dir ./imagesA`
+`!python ./Squat/__main__.py --input_json_path ./outputjson/Squat_VideoA.json`
 
 ### Credits
 
